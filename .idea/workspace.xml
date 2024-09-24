@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="966fc940-16e0-4961-af6d-070d55da52ed" name="Changes" comment="2 files..............">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/CRUD/TestcaseIntegration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/CRUD/testng_integration.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/TestNG01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/TestNG02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/TestNG03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/TestNG04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/TestNG05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/TestNG06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/TestNG07.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/TestNG08.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng_grpups.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng_parameter_chrome.xml" afterDir="false" />
+    <list default="true" id="966fc940-16e0-4961-af6d-070d55da52ed" name="Changes" comment="full CRUD operation">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/POJO1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/jsonpath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/pojo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/verification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/verification_with_assertj.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -47,6 +41,9 @@
     &quot;accountId&quot;: &quot;84ffd9fc-63cb-48a4-a209-411563851d70&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/POJO1.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -56,40 +53,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BDDStyle.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BDDStyleGet.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BDDStyleGetwithfunction.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NONBDDStyle.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NonBDDStyle.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NonBDDStylewithfunction.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test001.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test002.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/CRUD/testng_integration.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/testng__put.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/testng_grpups.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/testng_parameter_chrome.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/testng_put.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.NonBDDStylePUT.test_put_positve_tc.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Test001.test_get.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestNG01.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestNG03.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestNG04.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestNG06.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestNG08.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestcaseIntegration.test_update_req_put.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BDDStyle.executor": "Run",
+    "Application.BDDStyleGet.executor": "Run",
+    "Application.BDDStyleGetwithfunction.executor": "Run",
+    "Application.NONBDDStyle.executor": "Run",
+    "Application.NonBDDStyle.executor": "Run",
+    "Application.NonBDDStylewithfunction.executor": "Run",
+    "Application.POJO1.executor": "Run",
+    "Application.Test001.executor": "Run",
+    "Application.Test002.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/CRUD/testng_integration.xml.executor": "Run",
+    "TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/testng.xml.executor": "Run",
+    "TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/testng__put.xml.executor": "Run",
+    "TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/testng_grpups.xml.executor": "Run",
+    "TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/testng_parameter_chrome.xml.executor": "Run",
+    "TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/testng_put.xml.executor": "Run",
+    "TestNG.NonBDDStylePUT.test_put_positve_tc.executor": "Run",
+    "TestNG.POJO1.executor": "Run",
+    "TestNG.POJO1.test_crate_booking_hashmap.executor": "Run",
+    "TestNG.Test001.test_get.executor": "Run",
+    "TestNG.TestNG01.executor": "Run",
+    "TestNG.TestNG03.executor": "Run",
+    "TestNG.TestNG04.executor": "Run",
+    "TestNG.TestNG06.executor": "Run",
+    "TestNG.TestNG08.executor": "Run",
+    "TestNG.TestcaseIntegration.test_update_req_put.executor": "Run",
+    "TestNG.jsonpath.executor": "Run",
+    "TestNG.jsonpath.getbookingid.executor": "Run",
+    "TestNG.pojo2.test_post_with_hashmap.executor": "Run",
+    "TestNG.verification.test_verify.executor": "Run",
+    "TestNG.verification_with_assertj.verify_with_assertj.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.thetestingacademy.ex_22092024" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Dell\IdeaProjects\ATB7xAPIAutomationPrograms" />
     </key>
@@ -102,37 +110,30 @@
       <recent name="com.thetestingacademy.ex_15092024.CRUD.GET" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/CRUD/testng_integration.xml">
-    <configuration name="C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/CRUD/testng_integration.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ATB7xAPIAutomationPrograms" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/CRUD/testng_integration.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/testng_parameter_chrome.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ATB7xAPIAutomationPrograms" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_parameter_chrome.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestNG06" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.POJO1.test_crate_booking_hashmap">
+    <configuration name="POJO1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thetestingacademy.ex_22092024.POJO1" />
       <module name="ATB7xAPIAutomationPrograms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thetestingacademy.ex_21092024.testngexamples.*" />
+          <option name="PATTERN" value="com.thetestingacademy.ex_22092024.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.thetestingacademy.ex_21092024.testngexamples" />
-      <option name="MAIN_CLASS_NAME" value="com.thetestingacademy.ex_21092024.testngexamples.TestNG06" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="POJO1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ATB7xAPIAutomationPrograms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thetestingacademy.ex_22092024.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.thetestingacademy.ex_22092024" />
+      <option name="MAIN_CLASS_NAME" value="com.thetestingacademy.ex_22092024.POJO1" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -140,34 +141,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNG08" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="POJO1.test_crate_booking_hashmap" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ATB7xAPIAutomationPrograms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thetestingacademy.ex_21092024.testngexamples.*" />
+          <option name="PATTERN" value="com.thetestingacademy.ex_22092024.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.thetestingacademy.ex_21092024.testngexamples" />
-      <option name="MAIN_CLASS_NAME" value="com.thetestingacademy.ex_21092024.testngexamples.TestNG08" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="com.thetestingacademy.ex_22092024" />
+      <option name="MAIN_CLASS_NAME" value="com.thetestingacademy.ex_22092024.POJO1" />
+      <option name="METHOD_NAME" value="test_crate_booking_hashmap" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestcaseIntegration.test_update_req_put" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="jsonpath.getbookingid" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ATB7xAPIAutomationPrograms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thetestingacademy.ex_21092024.testngexamples.CRUD.*" />
+          <option name="PATTERN" value="com.thetestingacademy.ex_22092024.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.thetestingacademy.ex_21092024.testngexamples.CRUD" />
-      <option name="MAIN_CLASS_NAME" value="com.thetestingacademy.ex_21092024.testngexamples.CRUD.TestcaseIntegration" />
-      <option name="METHOD_NAME" value="test_update_req_put" />
+      <option name="PACKAGE_NAME" value="com.thetestingacademy.ex_22092024" />
+      <option name="MAIN_CLASS_NAME" value="com.thetestingacademy.ex_22092024.jsonpath" />
+      <option name="METHOD_NAME" value="getbookingid" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pojo2.test_post_with_hashmap" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ATB7xAPIAutomationPrograms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thetestingacademy.ex_22092024.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.thetestingacademy.ex_22092024" />
+      <option name="MAIN_CLASS_NAME" value="com.thetestingacademy.ex_22092024.pojo2" />
+      <option name="METHOD_NAME" value="test_post_with_hashmap" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -177,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/CRUD/testng_integration.xml" />
-        <item itemvalue="TestNG.TestcaseIntegration.test_update_req_put" />
-        <item itemvalue="TestNG.TestNG08" />
-        <item itemvalue="TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/testng_parameter_chrome.xml" />
-        <item itemvalue="TestNG.TestNG06" />
+        <item itemvalue="TestNG.POJO1.test_crate_booking_hashmap" />
+        <item itemvalue="TestNG.pojo2.test_post_with_hashmap" />
+        <item itemvalue="TestNG.POJO1" />
+        <item itemvalue="Application.POJO1" />
+        <item itemvalue="TestNG.jsonpath.getbookingid" />
       </list>
     </recent_temporary>
   </component>
@@ -210,12 +230,21 @@
       <option name="project" value="LOCAL" />
       <updated>1726927132285</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="full CRUD operation">
+      <option name="closed" value="true" />
+      <created>1726951679435</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726951679435</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2 files" />
     <MESSAGE value="2 files.............." />
-    <option name="LAST_COMMIT_MESSAGE" value="2 files.............." />
+    <MESSAGE value="full CRUD operation" />
+    <option name="LAST_COMMIT_MESSAGE" value="full CRUD operation" />
   </component>
 </project>
