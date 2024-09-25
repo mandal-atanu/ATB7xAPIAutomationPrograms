@@ -6,7 +6,9 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
+import org.assertj.core.data.MapEntry;
 import org.testng.annotations.Test;
+
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -30,7 +32,7 @@ public class IntegrationScenario1 {
                 "}";
 
         requestSpecification = RestAssured.given();
-        requestSpecification.baseUri("https://restful-booker.herokuapp.com/");
+        requestSpecification.baseUri("https://restful-booker.herokuapp.com");
         requestSpecification.basePath("/auth");
         requestSpecification.body(payload);
         requestSpecification.contentType(ContentType.JSON);
@@ -50,39 +52,88 @@ public class IntegrationScenario1 {
     @Test(priority = 2)
     @Description("Get booking id")
     public  void getbookingid(){
-        Map<String,Object> Payload_post = new LinkedHashMap();
 
-        Payload_post.put("firstname","John");
-        Payload_post.put("lastname","Brown");
-        Payload_post.put("totalprice",111);
-        Payload_post.put("depositpaid",true);
+        Map<String, Object> payload_Post = new LinkedHashMap();
+        payload_Post.put("firstname","John");
+        payload_Post.put("lastname", "Brown");
+        payload_Post.put("totalprice", 111);
+        payload_Post.put("depositpaid", true);
+        payload_Post.put("additionalneeds", "Lunch");
+        Map<String,Object> bookingDatesMap = new LinkedHashMap();
+        bookingDatesMap.put("checkin", "2021-07-01");
+        bookingDatesMap.put("checkout", "2021-07-01");
 
-
-        Map<String,Object> bookingdates = new LinkedHashMap();
-
-        bookingdates.put("Checkin","2018-01-01");
-        bookingdates.put("Checkout","2019-01-01");
-
-        Payload_post.put("bookingdates",bookingdates);
-        Payload_post.put("additionalneeds","breakfast");
-
-        System.out.println(Payload_post);
+        payload_Post.put("bookingdates",bookingDatesMap);
+//
+        payload_Post.put("bookingdates",bookingDatesMap);
 
 
+//        Map<String,Object> payload_Post = new LinkedHashMap();
+//        payload_Post.put("firstname","John");
+//        payload_Post.put("lastname", "Brown");
+//        payload_Post.put("totalprice", 111);
+//        payload_Post.put("depositpaid", true);
+//        payload_Post.put("additionalneeds", "Lunch");
+//        Map<String,Object> bookingDatesMap = new LinkedHashMap();
+//        bookingDatesMap.put("checkin", "2021-07-01");
+//        bookingDatesMap.put("checkout", "2021-07-01");
+//
+//        payload_Post.put("bookingdates",bookingDatesMap);
 
-        requestSpecification.basePath("booking");
+        System.out.println(payload_Post);
+
+        requestSpecification = RestAssured.given();
+        requestSpecification.baseUri("https://restful-booker.herokuapp.com");
+        requestSpecification.basePath("/booking");
         requestSpecification.contentType(ContentType.JSON);
-        requestSpecification.body(Payload_post);
+        requestSpecification.body(payload_Post);
 
         response = requestSpecification.when().post();
 
         validatableResponse = response.then().log().all();
         validatableResponse.statusCode(200);
 
-        bookingid = response.then().extract().path("bookingid");
+        bookingid = response.jsonPath().getString("bookingid");
         System.out.println("booking id is "+bookingid);
 
     }
+
+    @Test(priority = 3)
+    @Description("Update the Booking Name, Get the Booking by Id and verify.")
+    public void updatebooking(){
+
+        Map<String,Object> payloadPutRequest = new LinkedHashMap();
+        payloadPutRequest.put("firstname","Atanu");
+        payloadPutRequest.put("lastname", "Mandal");
+        payloadPutRequest.put("totalprice", 111);
+        payloadPutRequest.put("depositpaid", true);
+        payloadPutRequest.put("additionalneeds", "Lunch");
+        Map<String,Object> bookingDatesMapput = new LinkedHashMap();
+        bookingDatesMapput.put("Checkin", "2021-07-01");
+        bookingDatesMapput.put("Checkout", "2021-07-01");
+
+        payloadPutRequest.put("bookingdates",bookingDatesMapput);
+
+        System.out.println(payloadPutRequest);
+        requestSpecification = RestAssured.given();
+        requestSpecification.baseUri("https://restful-booker.herokuapp.com");
+        requestSpecification.basePath("/booking/"+bookingid);
+        requestSpecification.contentType(ContentType.JSON);
+        requestSpecification.cookie("token",token);
+        requestSpecification.body(payloadPutRequest).log().all();
+
+        response = requestSpecification.when().put();
+
+        validatableResponse = response.then().log().all();
+        validatableResponse.statusCode(200);
+
+
+
+    }
+
+
+
+
 
 
 }

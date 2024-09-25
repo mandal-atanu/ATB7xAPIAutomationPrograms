@@ -22,28 +22,27 @@ public class POJO1 {
     @Test
     public void test_crate_booking_hashmap() {
 
-        Map<String, Object> jsonbodyusingmap = new LinkedHashMap<>();
-        jsonbodyusingmap.put("fisrtname","Atanu");
-        jsonbodyusingmap.put("lastname","Mandal");
-        jsonbodyusingmap.put("total_price",111);
-        jsonbodyusingmap.put("deposit_paid",true);
+        Map<String,Object> payload_Post = new LinkedHashMap();
+        payload_Post.put("firstname","Atanu");
+        payload_Post.put("lastname", "Mandal");
+        payload_Post.put("totalprice", 111);
+        payload_Post.put("depositpaid", true);
+        payload_Post.put("additionalneeds", "Lunch");
+        Map<String,Object> bookingDatesMap = new LinkedHashMap();
+        bookingDatesMap.put("checkin", "2021-07-01");
+        bookingDatesMap.put("checkout", "2021-07-01");
 
-        Map<String,Object> bookingdatesmap = new LinkedHashMap<>();
+        payload_Post.put("bookingdates",bookingDatesMap);
 
-        bookingdatesmap.put("checkin","2018-01-01");
-        bookingdatesmap.put("checkout","2019-01-01");
 
-        jsonbodyusingmap.put("bookingdates",bookingdatesmap);
-        jsonbodyusingmap.put("additionalneeds","breakfast");
-
-        System.out.println(jsonbodyusingmap);
+        System.out.println(payload_Post);
 
         requestSpecification = RestAssured.given();
         requestSpecification.baseUri("https://restful-booker.herokuapp.com/");
-        requestSpecification.basePath("/booking");
+        requestSpecification.basePath("booking");
         requestSpecification.contentType(ContentType.JSON);
 
-        requestSpecification.body(jsonbodyusingmap).log().all();
+        requestSpecification.body(payload_Post).log().all();
 
         Response response = requestSpecification.when().post();
 
