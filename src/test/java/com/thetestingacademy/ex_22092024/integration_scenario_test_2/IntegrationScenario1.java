@@ -107,14 +107,14 @@ public class IntegrationScenario1 {
 
 
         Map<String,Object> payloadPutRequest = new LinkedHashMap<>();
-        payloadPutRequest.put("firstname","Atanu");
+        payloadPutRequest.put("firstname", "Atanu");
         payloadPutRequest.put("lastname", "Mandal");
         payloadPutRequest.put("totalprice", 111);
         payloadPutRequest.put("depositpaid", true);
         payloadPutRequest.put("additionalneeds", "Lunch");
         Map<String,Object> bookingDatesMapput = new LinkedHashMap<>();
-        bookingDatesMapput.put("Checkin", "2021-07-01");
-        bookingDatesMapput.put("Checkout", "2021-07-01");
+        bookingDatesMapput.put("checkin", "2021-07-01");
+        bookingDatesMapput.put("checkout", "2021-07-01");
 
         payloadPutRequest.put("bookingdates",bookingDatesMapput);
 
