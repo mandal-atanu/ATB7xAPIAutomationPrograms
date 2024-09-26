@@ -1,5 +1,6 @@
 package com.thetestingacademy.ex_22092024.integration_scenario_test_2;
 
+import com.google.gson.Gson;
 import io.qameta.allure.Description;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -10,6 +11,7 @@ import org.assertj.core.data.MapEntry;
 import org.testng.annotations.Test;
 
 
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -19,7 +21,7 @@ public class IntegrationScenario1 {
     ValidatableResponse validatableResponse;
     RequestSpecification requestSpecification;
     Response response;
-    String bookingid;
+    Integer bookingid;
     String token;
 
     @Test(priority =  1)
@@ -93,8 +95,8 @@ public class IntegrationScenario1 {
         validatableResponse = response.then().log().all();
         validatableResponse.statusCode(200);
 
-        bookingid = response.jsonPath().getString("bookingid");
-        System.out.println("booking id is "+bookingid);
+//        bookingid = response.jsonPath().getString("bookingid");
+//        System.out.println("booking id is "+bookingid);
 
     }
 
@@ -102,17 +104,24 @@ public class IntegrationScenario1 {
     @Description("Update the Booking Name, Get the Booking by Id and verify.")
     public void updatebooking(){
 
-        Map<String,Object> payloadPutRequest = new LinkedHashMap();
+
+
+        Map<String,Object> payloadPutRequest = new LinkedHashMap<>();
         payloadPutRequest.put("firstname","Atanu");
         payloadPutRequest.put("lastname", "Mandal");
         payloadPutRequest.put("totalprice", 111);
         payloadPutRequest.put("depositpaid", true);
         payloadPutRequest.put("additionalneeds", "Lunch");
-        Map<String,Object> bookingDatesMapput = new LinkedHashMap();
+        Map<String,Object> bookingDatesMapput = new LinkedHashMap<>();
         bookingDatesMapput.put("Checkin", "2021-07-01");
         bookingDatesMapput.put("Checkout", "2021-07-01");
 
         payloadPutRequest.put("bookingdates",bookingDatesMapput);
+
+
+
+
+
 
         System.out.println(payloadPutRequest);
         requestSpecification = RestAssured.given();
