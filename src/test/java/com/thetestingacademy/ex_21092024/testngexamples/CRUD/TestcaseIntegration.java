@@ -80,6 +80,7 @@ public class TestcaseIntegration {
         validatableResponse.statusCode(200).log().all();
 
         bookingid = response.jsonPath().getString("bookingid");
+        //ookingid = response.then().extract().path("bookingid");
 
         System.out.println(bookingid);
 
@@ -140,7 +141,9 @@ public class TestcaseIntegration {
         validatableResponse = response.then().log().all();
         validatableResponse.statusCode(200).log().all();
 
-        String firstname = response.then().extract().path("firstname");
+        //String firstname = response.then().extract().path("firstname");
+
+        String firstname = response.jsonPath().getString("firstname");
 
         String lastname = response.then().extract().path("lastname");
 

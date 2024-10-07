@@ -32,7 +32,7 @@ public class IntegrationScenario {
                 "}";
 
         requestSpecification = RestAssured.given();
-        requestSpecification.baseUri("https://restful-booker.herokuapp.com/");
+        requestSpecification.baseUri("https://restful-booker.herokuapp.com");
         requestSpecification.basePath("/auth");
         requestSpecification.body(payload);
         requestSpecification.contentType(ContentType.JSON);
@@ -68,7 +68,7 @@ public class IntegrationScenario {
 
 
 
-        requestSpecification.basePath("booking");
+        requestSpecification.basePath("/booking");
         requestSpecification.contentType(ContentType.JSON);
         requestSpecification.body(payload_Post);
 
@@ -79,6 +79,30 @@ public class IntegrationScenario {
 
         bookingid = response.jsonPath().getString("bookingid");
         System.out.println(bookingid);
+
+    }
+
+    @Test(priority = 3)
+    @Description("Update the Booking Name, Get the Booking by Id and verify.")
+    public void updateBookingName() {
+        //Step3-Token ID and Booking use in PUT request
+        Map<String, Object> payloadPutRequest = new LinkedHashMap();
+        payloadPutRequest.put("firstname","Pramod");
+        payloadPutRequest.put("lastname","Dutta");
+        payloadPutRequest.put("totalprice",100);
+        payloadPutRequest.put("depositpaid",true);
+        payloadPutRequest.put("additionalneeds","lunch");
+        Map<String, Object> bookingDatesMapput = new LinkedHashMap();
+        bookingDatesMapput.put("checkin", "2021-07-01");
+        bookingDatesMapput.put("checkout", "2021-07-01");
+
+        payloadPutRequest.put("bookingdates", bookingDatesMapput);
+        requestSpecification.basePath("/booking/" + bookingid);
+        requestSpecification.contentType(ContentType.JSON);
+        requestSpecification.cookie("token", token);
+        response = requestSpecification.when().body(payloadPutRequest).put();
+        validatableResponse = response.then().log().all();
+        validatableResponse.statusCode(200);
 
     }
 

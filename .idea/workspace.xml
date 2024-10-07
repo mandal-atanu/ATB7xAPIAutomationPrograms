@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="966fc940-16e0-4961-af6d-070d55da52ed" name="Changes" comment="full CRUD operation........../////.">
+    <list default="true" id="966fc940-16e0-4961-af6d-070d55da52ed" name="Changes" comment="full CRUD operation........../////...">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/GSON/Serialization/BookingDates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/GSON/Serialization/GSONdeSerialization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/GSON/Serialization/booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/GSON/Serialization/bookingresponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/integration_scenario_test_2/IntegrationScenario1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/integration_scenario_test_2/IntegrationScenario1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/CRUD/TestcaseIntegration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_21092024/testngexamples/CRUD/TestcaseIntegration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/GSON/Serialization/GSONSerialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/GSON/Serialization/GSONSerialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/integration_scenario_test_2/IntegrationScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/integration_scenario_test_2/IntegrationScenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/integration_scenario_test_2/IntegrationScenario1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/thetestingacademy/ex_22092024/integration_scenario_test_2/IntegrationScenario2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,12 +74,14 @@
     &quot;TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/testng_grpups.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/testng_parameter_chrome.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.C:/Users/Dell/IdeaProjects/ATB7xAPIAutomationPrograms/testng_put.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GSONdeSerialization.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.IntegrationScenario.createauth.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.IntegrationScenario.createauthtoken.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.IntegrationScenario.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.IntegrationScenario.getbookingid.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.IntegrationScenario1.createauthtoken.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.IntegrationScenario1.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.IntegrationScenario2.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.NonBDDStylePUT.test_put_positve_tc.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.POJO1.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.POJO1.test_crate_booking_hashmap.executor&quot;: &quot;Run&quot;,
@@ -82,6 +91,7 @@
     &quot;TestNG.TestNG04.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestNG06.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestNG08.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestcaseIntegration.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestcaseIntegration.test_update_req_put.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.jsonpath.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.jsonpath.getbookingid.executor&quot;: &quot;Run&quot;,
@@ -106,12 +116,13 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.thetestingacademy.ex_22092024.integration_scenario_test_2" />
+      <recent name="com.thetestingacademy.ex_22092024.GSON.Serialization" />
       <recent name="com.thetestingacademy.ex_21092024.testngexamples" />
       <recent name="com.thetestingacademy.ex_15092024.CRUD.POST" />
       <recent name="com.thetestingacademy.ex_15092024.CRUD.GET" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.IntegrationScenario1">
+  <component name="RunManager" selected="TestNG.IntegrationScenario">
     <configuration name="IntegrationScenario" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ATB7xAPIAutomationPrograms" />
       <extension name="coverage">
@@ -129,7 +140,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntegrationScenario1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationScenario2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ATB7xAPIAutomationPrograms" />
       <extension name="coverage">
         <pattern>
@@ -138,26 +149,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.thetestingacademy.ex_22092024.integration_scenario_test_2" />
-      <option name="MAIN_CLASS_NAME" value="com.thetestingacademy.ex_22092024.integration_scenario_test_2.IntegrationScenario1" />
+      <option name="MAIN_CLASS_NAME" value="com.thetestingacademy.ex_22092024.integration_scenario_test_2.IntegrationScenario2" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IntegrationScenario1.createauthtoken" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ATB7xAPIAutomationPrograms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.thetestingacademy.ex_22092024.integration_scenario_test_2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.thetestingacademy.ex_22092024.integration_scenario_test_2" />
-      <option name="MAIN_CLASS_NAME" value="com.thetestingacademy.ex_22092024.integration_scenario_test_2.IntegrationScenario1" />
-      <option name="METHOD_NAME" value="createauthtoken" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -181,7 +174,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pojo2.test_post_with_hashmap" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestcaseIntegration" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ATB7xAPIAutomationPrograms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thetestingacademy.ex_21092024.testngexamples.CRUD.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.thetestingacademy.ex_21092024.testngexamples.CRUD" />
+      <option name="MAIN_CLASS_NAME" value="com.thetestingacademy.ex_21092024.testngexamples.CRUD.TestcaseIntegration" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jsonpath" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ATB7xAPIAutomationPrograms" />
       <extension name="coverage">
         <pattern>
@@ -190,9 +200,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.thetestingacademy.ex_22092024" />
-      <option name="MAIN_CLASS_NAME" value="com.thetestingacademy.ex_22092024.pojo2" />
-      <option name="METHOD_NAME" value="test_post_with_hashmap" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="com.thetestingacademy.ex_22092024.jsonpath" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -201,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.IntegrationScenario1" />
-        <item itemvalue="TestNG.POJO1" />
         <item itemvalue="TestNG.IntegrationScenario" />
-        <item itemvalue="TestNG.IntegrationScenario1.createauthtoken" />
-        <item itemvalue="TestNG.pojo2.test_post_with_hashmap" />
+        <item itemvalue="TestNG.TestcaseIntegration" />
+        <item itemvalue="TestNG.POJO1" />
+        <item itemvalue="TestNG.jsonpath" />
+        <item itemvalue="TestNG.IntegrationScenario2" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727366864019</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="full CRUD operation........../////...">
+      <option name="closed" value="true" />
+      <created>1727368727583</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1727368727583</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -285,6 +302,7 @@
     <MESSAGE value="full CRUD operation........." />
     <MESSAGE value="full CRUD operation..........." />
     <MESSAGE value="full CRUD operation........../////." />
-    <option name="LAST_COMMIT_MESSAGE" value="full CRUD operation........../////." />
+    <MESSAGE value="full CRUD operation........../////..." />
+    <option name="LAST_COMMIT_MESSAGE" value="full CRUD operation........../////..." />
   </component>
 </project>

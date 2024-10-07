@@ -1,15 +1,16 @@
 package com.thetestingacademy.ex_22092024.GSON.Serialization;
 
 import com.google.gson.Gson;
+import io.qameta.allure.Description;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
-import io.qameta.allure.Description;
+import static org.assertj.core.api.Assertions.*;
 
-public class GSONSerialization {
+public class GSONdeSerialization {
 
     // String
     // Mashmap
@@ -41,7 +42,7 @@ public class GSONSerialization {
         booking.setAdditionalneeds("Breakfast");
 
         System.out.println(booking);
-        // Java Object -> JSON String (byteStream) - Serlization
+//        // Java Object -> JSON String (byteStream) - Serlization
         Gson gson = new Gson();
         String jsonStringpayload = gson.toJson(booking);
         System.out.println(jsonStringpayload);
@@ -66,6 +67,13 @@ public class GSONSerialization {
         validatableResponse.statusCode(200);
 
         // Parse - DeSerilization
+
+        bookingresponse bookingResponse = gson.fromJson(responseString, bookingresponse.class);
+        System.out.println(bookingResponse.getBookingid());
+        System.out.println();
+
+        assertThat(bookingResponse.getBooking().getFirstname()).isEqualTo("James").isNotEmpty().isNotNull();
+
 
 
 
